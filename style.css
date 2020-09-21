@@ -1,40 +1,93 @@
-/* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-/* VARIABLES CSS */
-:root{
-    --header-height: 3rem;
-    --font-semi:600
+*{
+    font-family: sans-serif;
+    list-style: none;
+    padding: 0;
 }
 
-/* COLOURS */
-:root{
-    --first-color: #4070f4;
-    --second-color: #0E2431;
+body{
+    background: #333;
 }
 
 
-/* FONT COLOR */
-:root{
-    --body-font: 'Roboto', sans-serif;
-    --big-font-size: 2rem;
-    --h2-font-size: 1.25rem;
-    --normal-font-size: 0.938rem;
+/* SKILLS SECTION */
+
+.skills{
+    width: 500px;
+    margin: 60px auto;
+    color: white;
 }
-@media screen and (min-width:768px){
-    :root{
-    --big-font-size: 2rem;
-    --h2-font-size: 2rem;
-    --normal-font-size: 1rem; 
+
+.skills li{
+    margin: 20px 0;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius:3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span{
+    height: 2px;
+    float: left;
+    background: #2187e7;
+}
+
+.htmlcss{
+    width: 70%;
+    animation: htmlcss 2s;
+}
+
+.javascript{
+    width: 65%;
+    animation: javascript 2s;
+}
+
+.python{
+    width: 50%;
+    animation: python 2s;
+}
+
+.java{
+    width: 25%;
+    animation: java 2s;
+}
+
+@keyframes htmlcss{
+    0%{
+        width: 0%;
+    }  
+    100%{
+        width: 70%
     }
 }
 
-/* MARGINS */
-:root{
-    --mb-1: 0.5rem;
-    --mb-2: 1rem;
-    --mb-3: 1.5rem;
-    --mb-4: 2rem;
-    --mb-5: 2.5rem;
-    --mb-6: 3rem;
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }  
+    100%{
+        width: 65%
+    }
+}
+
+@keyframes python{
+    0%{
+        width: 0%;
+    }  
+    100%{
+        width: 50%
+    }
+}
+
+@keyframes java{
+    0%{
+        width: 0%;
+    }  
+    100%{
+        width: 25%
+    }
 }
